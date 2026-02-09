@@ -1,3 +1,4 @@
+
 #!/bin/sh
 #
 # Build and test Git
@@ -8,7 +9,6 @@
 case "$jobname" in
 fedora-breaking-changes-musl|linux-breaking-changes)
 	export WITH_BREAKING_CHANGES=YesPlease
-	export WITH_RUST=YesPlease
 	MESONFLAGS="$MESONFLAGS -Dbreaking_changes=true"
 	MESONFLAGS="$MESONFLAGS -Drust=enabled"
 	;;
